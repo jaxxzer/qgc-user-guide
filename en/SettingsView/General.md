@@ -75,7 +75,17 @@ Settings include:
 - **Libre Pilot**: Autoconnect to Libre Pilot autopilot
 - **UDP**: Autoconnect to UDP
 - **RTK GPS**: Autoconnect to RTK GPS device
-- **NMEA GPS Device / Baudrate**: If detected, GPS information will be used for ground station location and follow me support.
+
+![Nmea GPS Device]
+
+The NMEA GPS Device section is used to choose the source of GPS which will be used for ground station location and follow me support (follow me is currently implemented for PX4 only).
+For more information see [Follow Me](https://docs.px4.io/en/flight_modes/follow_me.html) (PX4 docs).
+The Ground station location can be used for navigating back in cases when it is not stationary, such as a moving vehicle.
+
+- **NMEA GPS Device**: Select serial or UDP port for GPS information
+- **NMEA GPS Baudrate**: If serial port is selected, this sets the baudrate for that port
+- **NMEA Stream UDP Port**: If UDP port is selected, this is used to select the port that QGC will listen for the NMEA data
+
 
 ## Video {#video}
 
